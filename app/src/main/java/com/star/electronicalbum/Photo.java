@@ -9,6 +9,7 @@ public class Photo {
 
     private UUID mId;
     private Bitmap mBitmap;
+    private String mDescription;
 
     public Photo() {
         mId = UUID.randomUUID();
@@ -24,5 +25,13 @@ public class Photo {
 
     public void setBitmap(Bitmap bitmap) {
         mBitmap = bitmap;
+    }
+
+    public String getDescription() {
+        return mDescription;
+    }
+
+    public void setDescription(String description) {
+        mDescription = description;
     }
 }
